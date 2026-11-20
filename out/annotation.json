@@ -1,0 +1,1339 @@
+{
+  "provenance": {
+    "script": "01_annotate.py",
+    "timestamp_utc": "2026-11-19T17:54:50+00:00",
+    "git_commit": null,
+    "git_dirty": null,
+    "inputs": [
+      {
+        "path": "data/raw/interproscan_PKCB1.tsv",
+        "bytes": 865624,
+        "sha256": "03a96592540168d404b1ce59e081bdea71c19b707bfabe9b8dcb2f9a3995993c"
+      },
+      {
+        "path": "data/raw/uniprot_P05771.txt",
+        "bytes": 50952,
+        "sha256": "48d408826cf3807bf9bbe5e53e35df7e86a5ad2844f814943575b7e11874d42a"
+      },
+      {
+        "path": "data/raw/PKCB1_human_NP_997700.fasta",
+        "bytes": 747,
+        "sha256": "61c711c558fbb3d31597bd10af8545b8c1110eb191ede3ac56389eac824ed7bb"
+      }
+    ],
+    "packages": {
+      "biopython": "1.88",
+      "ViennaRNA": "2.8.0",
+      "pandas": "3.0.5",
+      "numpy": "2.5.5"
+    },
+    "python": "3.12.3",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "sequence_length": 671,
+  "sources": {
+    "interproscan": {
+      "file": "interproscan_PKCB1.tsv",
+      "n_hits": 167,
+      "databases": [
+        "CATH-FunFam",
+        "CATH-Gene3D",
+        "CDD",
+        "MobiDB-lite",
+        "PANTHER",
+        "PIRSF",
+        "PIRSR",
+        "PRINTS",
+        "PROSITE patterns",
+        "PROSITE profiles",
+        "Pfam",
+        "SMART",
+        "SUPERFAMILY"
+      ]
+    },
+    "uniprot": {
+      "file": "uniprot_P05771.txt",
+      "accession": "P05771",
+      "n_features": 117
+    }
+  },
+  "consensus_domains": [
+    {
+      "interpro": "IPR046349",
+      "description": "C1-like domain superfamily",
+      "n_databases": 1,
+      "databases": [
+        "SUPERFAMILY"
+      ],
+      "start_min": 25,
+      "start_max": 25,
+      "stop_min": 87,
+      "stop_max": 87,
+      "boundary_spread": 0,
+      "best_evalue": 2.39e-18,
+      "calls": [
+        {
+          "db": "SUPERFAMILY",
+          "signature": "SSF57889",
+          "start": 25,
+          "stop": 87,
+          "evalue": 2.39e-18
+        }
+      ],
+      "uniprot": {
+        "key": "ZN_FING",
+        "start": 36,
+        "stop": 86,
+        "note": "Phorbol-ester/DAG-type 1"
+      }
+    },
+    {
+      "interpro": "IPR002219",
+      "description": "Protein kinase C-like, phorbol ester/diacylglycerol-binding domain",
+      "n_databases": 3,
+      "databases": [
+        "PROSITE profiles",
+        "Pfam",
+        "SMART"
+      ],
+      "start_min": 36,
+      "start_max": 37,
+      "stop_min": 86,
+      "stop_max": 87,
+      "boundary_spread": 2,
+      "best_evalue": 9.4e-16,
+      "calls": [
+        {
+          "db": "PROSITE profiles",
+          "signature": "PS50081",
+          "start": 36,
+          "stop": 86,
+          "evalue": 16.2355
+        },
+        {
+          "db": "SMART",
+          "signature": "SM00109",
+          "start": 37,
+          "stop": 86,
+          "evalue": 9.4e-16
+        },
+        {
+          "db": "Pfam",
+          "signature": "PF00130",
+          "start": 37,
+          "stop": 87,
+          "evalue": 5.5e-13
+        }
+      ],
+      "uniprot": {
+        "key": "ZN_FING",
+        "start": 36,
+        "stop": 86,
+        "note": "Phorbol-ester/DAG-type 1"
+      }
+    },
+    {
+      "interpro": "IPR046349",
+      "description": "C1-like domain superfamily",
+      "n_databases": 1,
+      "databases": [
+        "SUPERFAMILY"
+      ],
+      "start_min": 98,
+      "start_max": 98,
+      "stop_min": 154,
+      "stop_max": 154,
+      "boundary_spread": 0,
+      "best_evalue": 1.05e-17,
+      "calls": [
+        {
+          "db": "SUPERFAMILY",
+          "signature": "SSF57889",
+          "start": 98,
+          "stop": 154,
+          "evalue": 1.05e-17
+        }
+      ],
+      "uniprot": {
+        "key": "ZN_FING",
+        "start": 101,
+        "stop": 151,
+        "note": "Phorbol-ester/DAG-type 2"
+      }
+    },
+    {
+      "interpro": "IPR002219",
+      "description": "Protein kinase C-like, phorbol ester/diacylglycerol-binding domain",
+      "n_databases": 3,
+      "databases": [
+        "PROSITE profiles",
+        "Pfam",
+        "SMART"
+      ],
+      "start_min": 101,
+      "start_max": 102,
+      "stop_min": 151,
+      "stop_max": 153,
+      "boundary_spread": 3,
+      "best_evalue": 3.2e-16,
+      "calls": [
+        {
+          "db": "PROSITE profiles",
+          "signature": "PS50081",
+          "start": 101,
+          "stop": 151,
+          "evalue": 16.099701
+        },
+        {
+          "db": "SMART",
+          "signature": "SM00109",
+          "start": 102,
+          "stop": 151,
+          "evalue": 1.9e-15
+        },
+        {
+          "db": "Pfam",
+          "signature": "PF00130",
+          "start": 102,
+          "stop": 153,
+          "evalue": 3.2e-16
+        }
+      ],
+      "uniprot": {
+        "key": "ZN_FING",
+        "start": 101,
+        "stop": 151,
+        "note": "Phorbol-ester/DAG-type 2"
+      }
+    },
+    {
+      "interpro": "IPR000008",
+      "description": "C2 domain",
+      "n_databases": 3,
+      "databases": [
+        "PROSITE profiles",
+        "Pfam",
+        "SMART"
+      ],
+      "start_min": 158,
+      "start_max": 173,
+      "stop_min": 275,
+      "stop_max": 277,
+      "boundary_spread": 17,
+      "best_evalue": 1.2e-25,
+      "calls": [
+        {
+          "db": "PROSITE profiles",
+          "signature": "PS50004",
+          "start": 158,
+          "stop": 275,
+          "evalue": 22.94199
+        },
+        {
+          "db": "SMART",
+          "signature": "SM00239",
+          "start": 172,
+          "stop": 275,
+          "evalue": 7.3e-23
+        },
+        {
+          "db": "Pfam",
+          "signature": "PF00168",
+          "start": 173,
+          "stop": 277,
+          "evalue": 1.2e-25
+        }
+      ],
+      "uniprot": {
+        "key": "DOMAIN",
+        "start": 158,
+        "stop": 275,
+        "note": "C2"
+      }
+    },
+    {
+      "interpro": "IPR035892",
+      "description": "C2 domain superfamily",
+      "n_databases": 1,
+      "databases": [
+        "SUPERFAMILY"
+      ],
+      "start_min": 158,
+      "start_max": 158,
+      "stop_min": 282,
+      "stop_max": 282,
+      "boundary_spread": 0,
+      "best_evalue": 4.41e-35,
+      "calls": [
+        {
+          "db": "SUPERFAMILY",
+          "signature": "SSF49562",
+          "start": 158,
+          "stop": 282,
+          "evalue": 4.41e-35
+        }
+      ],
+      "uniprot": {
+        "key": "DOMAIN",
+        "start": 158,
+        "stop": 275,
+        "note": "C2"
+      }
+    },
+    {
+      "interpro": "IPR011009",
+      "description": "Protein kinase-like domain superfamily",
+      "n_databases": 1,
+      "databases": [
+        "SUPERFAMILY"
+      ],
+      "start_min": 338,
+      "start_max": 338,
+      "stop_min": 665,
+      "stop_max": 665,
+      "boundary_spread": 0,
+      "best_evalue": 3.37e-90,
+      "calls": [
+        {
+          "db": "SUPERFAMILY",
+          "signature": "SSF56112",
+          "start": 338,
+          "stop": 665,
+          "evalue": 3.37e-90
+        }
+      ],
+      "uniprot": {
+        "key": "DOMAIN",
+        "start": 342,
+        "stop": 600,
+        "note": "Protein kinase"
+      }
+    },
+    {
+      "interpro": "IPR034664",
+      "description": "Classical protein kinase C beta, catalytic domain",
+      "n_databases": 1,
+      "databases": [
+        "CDD"
+      ],
+      "start_min": 341,
+      "start_max": 341,
+      "stop_min": 664,
+      "stop_max": 664,
+      "boundary_spread": 0,
+      "best_evalue": 0.0,
+      "calls": [
+        {
+          "db": "CDD",
+          "signature": "cd05616",
+          "start": 341,
+          "stop": 664,
+          "evalue": 0.0
+        }
+      ],
+      "uniprot": {
+        "key": "DOMAIN",
+        "start": 342,
+        "stop": 600,
+        "note": "Protein kinase"
+      }
+    },
+    {
+      "interpro": "IPR000719",
+      "description": "Protein kinase domain",
+      "n_databases": 3,
+      "databases": [
+        "PROSITE profiles",
+        "Pfam",
+        "SMART"
+      ],
+      "start_min": 342,
+      "start_max": 343,
+      "stop_min": 598,
+      "stop_max": 600,
+      "boundary_spread": 3,
+      "best_evalue": 6e-97,
+      "calls": [
+        {
+          "db": "PROSITE profiles",
+          "signature": "PS50011",
+          "start": 342,
+          "stop": 600,
+          "evalue": 46.576488
+        },
+        {
+          "db": "SMART",
+          "signature": "SM00220",
+          "start": 342,
+          "stop": 600,
+          "evalue": 6e-97
+        },
+        {
+          "db": "Pfam",
+          "signature": "PF00069",
+          "start": 343,
+          "stop": 598,
+          "evalue": 1.4e-58
+        }
+      ],
+      "uniprot": {
+        "key": "DOMAIN",
+        "start": 342,
+        "stop": 600,
+        "note": "Protein kinase"
+      }
+    },
+    {
+      "interpro": "IPR000961",
+      "description": "AGC-kinase, C-terminal",
+      "n_databases": 2,
+      "databases": [
+        "PROSITE profiles",
+        "SMART"
+      ],
+      "start_min": 601,
+      "start_max": 601,
+      "stop_min": 664,
+      "stop_max": 671,
+      "boundary_spread": 7,
+      "best_evalue": 1.3e-26,
+      "calls": [
+        {
+          "db": "PROSITE profiles",
+          "signature": "PS51285",
+          "start": 601,
+          "stop": 671,
+          "evalue": 19.030169
+        },
+        {
+          "db": "SMART",
+          "signature": "SM00133",
+          "start": 601,
+          "stop": 664,
+          "evalue": 1.3e-26
+        }
+      ],
+      "uniprot": {
+        "key": "DOMAIN",
+        "start": 601,
+        "stop": 671,
+        "note": "AGC-kinase C-terminal"
+      }
+    },
+    {
+      "interpro": "IPR017892",
+      "description": "Protein kinase, C-terminal",
+      "n_databases": 1,
+      "databases": [
+        "Pfam"
+      ],
+      "start_min": 623,
+      "start_max": 623,
+      "stop_min": 662,
+      "stop_max": 662,
+      "boundary_spread": 0,
+      "best_evalue": 6.9e-10,
+      "calls": [
+        {
+          "db": "Pfam",
+          "signature": "PF00433",
+          "start": 623,
+          "stop": 662,
+          "evalue": 6.9e-10
+        }
+      ],
+      "uniprot": {
+        "key": "DOMAIN",
+        "start": 601,
+        "stop": 671,
+        "note": "AGC-kinase C-terminal"
+      }
+    }
+  ],
+  "curated_features": [
+    {
+      "key": "INIT_MET",
+      "start": 1,
+      "stop": 1,
+      "note": "Removed",
+      "isoform": null
+    },
+    {
+      "key": "CHAIN",
+      "start": 2,
+      "stop": 671,
+      "note": "Protein kinase C beta type",
+      "isoform": null
+    },
+    {
+      "key": "DOMAIN",
+      "start": 158,
+      "stop": 275,
+      "note": "C2",
+      "isoform": null
+    },
+    {
+      "key": "DOMAIN",
+      "start": 342,
+      "stop": 600,
+      "note": "Protein kinase",
+      "isoform": null
+    },
+    {
+      "key": "DOMAIN",
+      "start": 601,
+      "stop": 671,
+      "note": "AGC-kinase C-terminal",
+      "isoform": null
+    },
+    {
+      "key": "ZN_FING",
+      "start": 36,
+      "stop": 86,
+      "note": "Phorbol-ester/DAG-type 1",
+      "isoform": null
+    },
+    {
+      "key": "ZN_FING",
+      "start": 101,
+      "stop": 151,
+      "note": "Phorbol-ester/DAG-type 2",
+      "isoform": null
+    },
+    {
+      "key": "REGION",
+      "start": 311,
+      "stop": 330,
+      "note": "Disordered",
+      "isoform": null
+    },
+    {
+      "key": "REGION",
+      "start": 614,
+      "stop": 635,
+      "note": "Disordered",
+      "isoform": null
+    },
+    {
+      "key": "COMPBIAS",
+      "start": 623,
+      "stop": 635,
+      "note": "Basic and acidic residues",
+      "isoform": null
+    },
+    {
+      "key": "ACT_SITE",
+      "start": 466,
+      "stop": 466,
+      "note": "Proton acceptor",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 186,
+      "stop": 186,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 187,
+      "stop": 187,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 187,
+      "stop": 187,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 193,
+      "stop": 193,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 246,
+      "stop": 246,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 246,
+      "stop": 246,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 247,
+      "stop": 247,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 248,
+      "stop": 248,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 248,
+      "stop": 248,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 248,
+      "stop": 248,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 251,
+      "stop": 251,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 252,
+      "stop": 252,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 254,
+      "stop": 254,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 254,
+      "stop": 254,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 348,
+      "stop": 356,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "BINDING",
+      "start": 371,
+      "stop": 371,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 2,
+      "stop": 2,
+      "note": "N-acetylalanine",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 11,
+      "stop": 11,
+      "note": "Phosphoserine",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 16,
+      "stop": 16,
+      "note": "Phosphoserine; by autocatalysis",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 17,
+      "stop": 17,
+      "note": "Phosphothreonine",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 206,
+      "stop": 206,
+      "note": "Phosphoserine",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 250,
+      "stop": 250,
+      "note": "Phosphothreonine; by autocatalysis",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 311,
+      "stop": 311,
+      "note": "Phosphoserine",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 314,
+      "stop": 314,
+      "note": "Phosphothreonine",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 324,
+      "stop": 324,
+      "note": "Phosphothreonine; by autocatalysis",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 500,
+      "stop": 500,
+      "note": "Phosphothreonine; by PDPK1",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 504,
+      "stop": 504,
+      "note": "Phosphothreonine",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 635,
+      "stop": 635,
+      "note": "Phosphothreonine; by autocatalysis",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 642,
+      "stop": 642,
+      "note": "Phosphothreonine",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 661,
+      "stop": 661,
+      "note": "Phosphoserine; by autocatalysis",
+      "isoform": null
+    },
+    {
+      "key": "MOD_RES",
+      "start": 662,
+      "stop": 662,
+      "note": "Phosphotyrosine; by SYK",
+      "isoform": null
+    },
+    {
+      "key": "VAR_SEQ",
+      "start": 622,
+      "stop": 671,
+      "note": "RDKRDTSNFDKEFTRQPVELTPTDKLFIMNLDQNEFAGFSYTNPEFVINV",
+      "isoform": null
+    },
+    {
+      "key": "VARIANT",
+      "start": 144,
+      "stop": 144,
+      "note": "V -> M (in a colorectal adenocarcinoma sample;",
+      "isoform": null
+    },
+    {
+      "key": "VARIANT",
+      "start": 496,
+      "stop": 496,
+      "note": "V -> M (in a glioblastoma multiforme sample; somatic",
+      "isoform": null
+    },
+    {
+      "key": "VARIANT",
+      "start": 588,
+      "stop": 588,
+      "note": "P -> H (in dbSNP:rs35631544)",
+      "isoform": null
+    },
+    {
+      "key": "CONFLICT",
+      "start": 69,
+      "stop": 69,
+      "note": "V -> G (in Ref. 7; CAA44393)",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 31,
+      "stop": 34,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 39,
+      "stop": 42,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 48,
+      "stop": 50,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "TURN",
+      "start": 51,
+      "stop": 53,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 54,
+      "stop": 57,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 60,
+      "stop": 62,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 64,
+      "stop": 67,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "TURN",
+      "start": 68,
+      "stop": 70,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 73,
+      "stop": 75,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "TURN",
+      "start": 76,
+      "stop": 78,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 79,
+      "stop": 81,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 97,
+      "stop": 99,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 104,
+      "stop": 107,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "TURN",
+      "start": 116,
+      "stop": 118,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 124,
+      "stop": 126,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 129,
+      "stop": 132,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "TURN",
+      "start": 133,
+      "stop": 135,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 138,
+      "stop": 140,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 141,
+      "stop": 146,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 157,
+      "stop": 159,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 161,
+      "stop": 182,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "TURN",
+      "start": 188,
+      "stop": 190,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 194,
+      "stop": 202,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 204,
+      "stop": 208,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 222,
+      "stop": 230,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 233,
+      "stop": 237,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 239,
+      "stop": 246,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 249,
+      "stop": 251,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 254,
+      "stop": 262,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 263,
+      "stop": 268,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 271,
+      "stop": 276,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 280,
+      "stop": 283,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 288,
+      "stop": 290,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 296,
+      "stop": 299,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 300,
+      "stop": 309,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 339,
+      "stop": 341,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 342,
+      "stop": 351,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 354,
+      "stop": 361,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 364,
+      "stop": 374,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 375,
+      "stop": 380,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "TURN",
+      "start": 381,
+      "stop": 383,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 384,
+      "stop": 394,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 406,
+      "stop": 411,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 413,
+      "stop": 421,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 425,
+      "stop": 427,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 428,
+      "stop": 435,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 440,
+      "stop": 459,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 469,
+      "stop": 471,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 472,
+      "stop": 474,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 476,
+      "stop": 478,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 480,
+      "stop": 482,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 489,
+      "stop": 491,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 505,
+      "stop": 507,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 510,
+      "stop": 513,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 521,
+      "stop": 536,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 546,
+      "stop": 555,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 556,
+      "stop": 561,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 566,
+      "stop": 575,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 580,
+      "stop": 582,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 590,
+      "stop": 595,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 598,
+      "stop": 600,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 605,
+      "stop": 609,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 618,
+      "stop": 621,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 629,
+      "stop": 636,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 641,
+      "stop": 644,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "HELIX",
+      "start": 646,
+      "stop": 651,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "TURN",
+      "start": 654,
+      "stop": 657,
+      "note": "",
+      "isoform": null
+    },
+    {
+      "key": "STRAND",
+      "start": 658,
+      "stop": 660,
+      "note": "",
+      "isoform": null
+    }
+  ],
+  "v1_regex_comparison": [
+    {
+      "feature": "C1A zinc finger",
+      "v1_start": 37,
+      "v1_end": 71,
+      "curated_start": 36,
+      "curated_end": 86,
+      "start_error": 1,
+      "end_error": -15,
+      "residues_missed": 16,
+      "verdict": "off by +1 / -15"
+    },
+    {
+      "feature": "C1B zinc finger",
+      "v1_start": 115,
+      "v1_end": 135,
+      "curated_start": 101,
+      "curated_end": 151,
+      "start_error": 14,
+      "end_error": -16,
+      "residues_missed": 30,
+      "verdict": "off by +14 / -16"
+    },
+    {
+      "feature": "C2 domain",
+      "v1_start": null,
+      "v1_end": null,
+      "curated_start": 158,
+      "curated_end": 275,
+      "verdict": "MISSED ENTIRELY by v1",
+      "start_error": null,
+      "end_error": null,
+      "residues_missed": 118
+    },
+    {
+      "feature": "Protein kinase domain",
+      "v1_start": 348,
+      "v1_end": 511,
+      "curated_start": 342,
+      "curated_end": 600,
+      "start_error": 6,
+      "end_error": -89,
+      "residues_missed": 95,
+      "verdict": "off by +6 / -89"
+    },
+    {
+      "feature": "AGC-kinase C-terminal",
+      "v1_start": null,
+      "v1_end": null,
+      "curated_start": 601,
+      "curated_end": 671,
+      "verdict": "MISSED ENTIRELY by v1",
+      "start_error": null,
+      "end_error": null,
+      "residues_missed": 71
+    },
+    {
+      "feature": "Active site (proton acceptor)",
+      "v1_start": 466,
+      "v1_end": 466,
+      "curated_start": 466,
+      "curated_end": 466,
+      "start_error": 0,
+      "end_error": 0,
+      "residues_missed": 0,
+      "verdict": "exact"
+    },
+    {
+      "feature": "PDK1 phosphosite",
+      "v1_start": 500,
+      "v1_end": 500,
+      "curated_start": 500,
+      "curated_end": 500,
+      "start_error": 0,
+      "end_error": 0,
+      "residues_missed": 0,
+      "verdict": "exact"
+    }
+  ]
+}

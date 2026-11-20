@@ -1,0 +1,6 @@
+# Pinned to the versions this project was built and tested against.
+biopython==1.88
+ViennaRNA==2.8.0
+pandas==3.0.5
+matplotlib==3.11.2
+pytest==9.1.1

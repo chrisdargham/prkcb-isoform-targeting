@@ -1,0 +1,90 @@
+PKC-beta domain annotation from validated sources
+============================================================================
+run 2026-11-19T17:54:50+00:00  commit no-git
+
+Sequence: 671 aa
+InterProScan: 167 hits across 13 member databases
+UniProt P05771: 115 canonical features
+
+CONSENSUS DOMAINS (independent databases agreeing)
+
+  C1-like domain superfamily
+    InterPro IPR046349   best E-value 2.4e-18
+    1 databases: SUPERFAMILY
+    boundaries: 25-87 (unanimous)
+    UniProt curated: 36-86  "Phorbol-ester/DAG-type 1"
+
+  Protein kinase C-like, phorbol ester/diacylglycerol-binding domain
+    InterPro IPR002219   best E-value 9.4e-16
+    3 databases: PROSITE profiles, Pfam, SMART
+    boundaries: 36-37 to 86-87 (spread 2 aa)
+    UniProt curated: 36-86  "Phorbol-ester/DAG-type 1"
+
+  C1-like domain superfamily
+    InterPro IPR046349   best E-value 1.0e-17
+    1 databases: SUPERFAMILY
+    boundaries: 98-154 (unanimous)
+    UniProt curated: 101-151  "Phorbol-ester/DAG-type 2"
+
+  Protein kinase C-like, phorbol ester/diacylglycerol-binding domain
+    InterPro IPR002219   best E-value 3.2e-16
+    3 databases: PROSITE profiles, Pfam, SMART
+    boundaries: 101-102 to 151-153 (spread 3 aa)
+    UniProt curated: 101-151  "Phorbol-ester/DAG-type 2"
+
+  C2 domain
+    InterPro IPR000008   best E-value 1.2e-25
+    3 databases: PROSITE profiles, Pfam, SMART
+    boundaries: 158-173 to 275-277 (spread 17 aa)
+    UniProt curated: 158-275  "C2"
+
+  C2 domain superfamily
+    InterPro IPR035892   best E-value 4.4e-35
+    1 databases: SUPERFAMILY
+    boundaries: 158-282 (unanimous)
+    UniProt curated: 158-275  "C2"
+
+  Protein kinase-like domain superfamily
+    InterPro IPR011009   best E-value 3.4e-90
+    1 databases: SUPERFAMILY
+    boundaries: 338-665 (unanimous)
+    UniProt curated: 342-600  "Protein kinase"
+
+  Classical protein kinase C beta, catalytic domain
+    InterPro IPR034664   best E-value n/a
+    1 databases: CDD
+    boundaries: 341-664 (unanimous)
+    UniProt curated: 342-600  "Protein kinase"
+
+  Protein kinase domain
+    InterPro IPR000719   best E-value 6.0e-97
+    3 databases: PROSITE profiles, Pfam, SMART
+    boundaries: 342-343 to 598-600 (spread 3 aa)
+    UniProt curated: 342-600  "Protein kinase"
+
+  AGC-kinase, C-terminal
+    InterPro IPR000961   best E-value 1.3e-26
+    2 databases: PROSITE profiles, SMART
+    boundaries: 601-601 to 664-671 (spread 7 aa)
+    UniProt curated: 601-671  "AGC-kinase C-terminal"
+
+  Protein kinase, C-terminal
+    InterPro IPR017892   best E-value 6.9e-10
+    1 databases: Pfam
+    boundaries: 623-662 (unanimous)
+    UniProt curated: 601-671  "AGC-kinase C-terminal"
+
+
+WHAT v1's REGEX GOT WRONG
+
+  feature                         v1            curated       verdict
+  C1A zinc finger                 37-71         36-86         off by +1 / -15
+  C1B zinc finger                 115-135       101-151       off by +14 / -16
+  C2 domain                       not found     158-275       MISSED ENTIRELY by v1
+  Protein kinase domain           348-511       342-600       off by +6 / -89
+  AGC-kinase C-terminal           not found     601-671       MISSED ENTIRELY by v1
+  Active site (proton acceptor)   466-466       466-466       exact
+  PDK1 phosphosite                500-500       500-500       exact
+
+  Exactly correct: 2 of 7 features
+  Residues inside real domains that v1 failed to cover: 330
